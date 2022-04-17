@@ -3,6 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BackgroundStackO.App">
     <Application.Resources>
+        <Color x:Key="defaultTextColor">#25333E</Color>
+        <Color x:Key="defaultBackgroundColor">#f2f2f7</Color>
+        <Color x:Key="defaultButtonBackgroundColor">#667070</Color>
+        <Color x:Key="PrincipalColor" >#181818</Color>
+
+
+        <Style x:Key="AButton" TargetType="Button">
+            <Setter Property="TextColor" Value="{DynamicResource PrincipalColor}" />
+            <Setter Property="WidthRequest" Value="150" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="CornerRadius" Value="{x:OnPlatform UWP='', iOS='30', Android='40'}" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource defaultButtonBackgroundColor}" />
+            <Setter Property="BorderColor" Value="#A7ADB1" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="TextTransform" Value="None" />
+            <Setter Property="Opacity" Value="0.8" />
+        </Style>
+
 
     </Application.Resources>
 </Application>

@@ -3,7 +3,7 @@
     x:Class="BackgroundStackO.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="{DynamicResource defaultBackgroundColor}">
+    BackgroundColor="{StaticResource defaultBackgroundColor}">
 
     <StackLayout>
         <Frame
@@ -14,11 +14,11 @@
                 FontSize="36"
                 HorizontalTextAlignment="Center"
                 Text="Change BackgroundColor"
-                TextColor="White" />
+                TextColor="{DynamicResource PrincipalColor}" />
         </Frame>
-        <Button Clicked="Button_Clicked" Text="Green" />
+        <Button Clicked="Button_Clicked" Text="Green" TextColor="{StaticResource PrincipalColor}" />
 
-        <Button Clicked="Button_Clicked_1" Text="Red" />
+        <Button Clicked="Button_Clicked_1" Text="Red" TextColor="{DynamicResource PrincipalColor}" />
 
 
     </StackLayout>
