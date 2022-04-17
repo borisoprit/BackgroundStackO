@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BackgroundStackO.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{DynamicResource defaultBackgroundColor}">
+
+    <StackLayout>
+        <Frame
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Change BackgroundColor"
+                TextColor="White" />
+        </Frame>
+        <Button Clicked="Button_Clicked" Text="Green" />
+
+        <Button Clicked="Button_Clicked_1" Text="Red" />
+
+
+    </StackLayout>
+
+</ContentPage>
